@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "sass/styles.css",
+	"sources": [
+		"sass/styles.scss"
+	],
+	"sourcesContent": [
+		"#map {\n    width: 100%;\n    height: 400px;\n\tmargin-bottom: 2em;\n}\n\n/* Bootstrap overrides */\n.container-fluid {\n\tpadding: 0;\n}"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,KAAM;EACjB,aAAa,EAAE,GAAI;CACnB;;AAED,yBAAyB;;AACzB,AAAA,gBAAgB,CAAC;EAChB,OAAO,EAAE,CAAE;CACX",
+	"names": []
+}
