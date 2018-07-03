@@ -123,7 +123,7 @@ if ($_FILES) {
           </nav>
         </div>
 
-        <div class="col-md-6 offset-md-3">
+        <div id="content" class="col-md-6 offset-md-3">
         <?php if (isset($file)) : ?>
 
           <div id="map"></div>
@@ -137,17 +137,23 @@ if ($_FILES) {
                 echo '<p>Latitude photo was taken: ' . ($cleanData['lat'] ? $cleanData['lat'] : 'N/A') . '</p>';
                 echo '<p>Longitude photo was taken: ' . ($cleanData['lng'] ? $cleanData['lng'] : 'N/A') . '</p>';
                 echo '<p>Compass degree and direction photo was taken: ' . ($cleanData['degrees'] ? $cleanData['degrees'] . ' | ' . $cleanData['direction'] : 'N/A') . '</p>';
+                echo '<a href="/" class="btn btn-primary">Scan Another</a>';
               ?>
             </div>
           <?php else : ?>
             <p>Image has no applicable EXIF data.</p>
+            <a href="/" class="btn btn-primary">Scan Another</a>
           <?php endif; ?>
 
         <?php else : ?>
 
           <form action="" method="post" enctype="multipart/form-data">
-            <input type="file" name="photoUpload"/>
-            <input type="submit" name="submit" value="Scan"/>
+            <div class="form-group">
+              <label for="exampleInputFile">Image Upload</label>
+              <input type="file" name="photoUpload" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+              <small id="fileHelp" class="form-text text-muted">Upload an image here to scan it's EXIF Data, take a picture with your phone and give it a try!</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
 
         <?php endif; ?>
