@@ -105,9 +105,7 @@ if ($_FILES) {
   </head>
   <body>
     <div class="container-fluid">
-      <div class="pos-f-t">
       <div class="row">
-        
         <div class="col-md-12">
           <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
@@ -123,7 +121,7 @@ if ($_FILES) {
           </nav>
         </div>
 
-        <div id="content" class="col-md-6 offset-md-3">
+        <div id="content" class="col align-self-center">
         <?php if (isset($file)) : ?>
 
           <div id="map"></div>
@@ -159,7 +157,6 @@ if ($_FILES) {
         <?php endif; ?>
         </div>
       </div>
-    </div>
   </div>
 
 
