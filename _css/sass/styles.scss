@@ -5,8 +5,12 @@
 }
 
 #content {
-    padding: 40px 0 40px 0;
+    padding-bottom: 40px;
     text-align: center;
+}
+
+#content.home {
+    padding-top: 40px;
 }
 
 .navbar-brand a {
