@@ -27,5 +27,34 @@
     margin: 0 auto;
 }
 
+.upload-text{
+    background: #a8d6e0;
+    border-radius: 5px;
+    max-width: 350px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.upload-text p {
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+    padding: 50px 0;
+}
+.upload-text i {
+    opacity: 1;
+    font-size: 30px;
+    display: block;
+}
+
+.upload-text .up {
+    font-weight: bold;
+}   
+
+.form-group label{
+    font-size: 40px;
+    font-weight: bold;
+}
+
 /* File Upload */
 
