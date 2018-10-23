@@ -1,7 +1,6 @@
 <html lang="en">
   <head>
     <?php include("_components/head.php"); ?>
-  </head>
   <body>
     <div class="container-fluid">
       <div class="row">
@@ -11,7 +10,9 @@
 
           <form action="scan.php" method="post" enctype="multipart/form-data">
             <div class="form-group">
-              <label for="exampleInputFile">Image Upload</label>
+              <div class="upload-text">
+              <p><i class="fas fa-cloud-upload-alt"></i>image <span class="up">up</span>load</p>
+              </div>
               <input type="file" name="photoUpload" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
               <small id="fileHelp" class="form-text text-muted">Upload an image here to scan it's EXIF Data, take a picture with your phone and give it a try!</small>
             </div>
