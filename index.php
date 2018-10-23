@@ -1,6 +1,7 @@
 <html lang="en">
   <head>
     <?php include("_components/head.php"); ?>
+  </head>
   <body>
     <div class="container-fluid">
       <div class="row">
